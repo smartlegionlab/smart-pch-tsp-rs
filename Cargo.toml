@@ -1,0 +1,22 @@
+[package]
+name = "smart-pch-tsp"
+version = "0.1.0"
+edition = "2024"
+authors = ["Alexander Suvorov (smartlegionlab) <smartlegionlab@gmail.com>"]
+description = "Universal TSP path improver using PCH (Position-Candidate-Hypothesis) paradigm with statistical path synthesis."
+license = "BSD-3-Clause"
+repository = "https://github.com/smartlegionlab/smart-pch-tsp-rs"
+readme = "README.md"
+keywords = ["tsp", "optimization", "heuristic", "pch", "path-improver"]
+categories = ["algorithms", "science"]
+documentation = "https://docs.rs/smart-pch-tsp"
+
+[dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+smart-dynamic-gravity-tsp = "0.1"
+
+[[bench]]
+name = "benchmark"
+harness = false
